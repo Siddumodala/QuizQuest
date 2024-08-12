@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizQuest</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="nav-logo">
+            <h1>QuizQuest</h1>
+            <i class="ri-close-large-fill" onclick="hideSidebar()"></i>
+        </div>
+        <hr>
+        <div class="sidebar-links">
+            <a href="#" class="account-link">Account</a>
+            <a href="#" class="home-link">Home</a>
+            <a href="#" onclick="window.scrollTo({top:2000,behaviour:'smooth'}); return false;">About</a>
+            <!-- <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">About</a>     -->
+        </div>
+        <button class="loginlink">Sign in</button> 
+    </div>
+    <div class="nav">
+        <div class="nav-logo">QuizQuest</div>
+        <div class="nav-searchbar">
+            <!-- <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});">About</a> -->
+            <a href="#" class="home-link">Home</a>
+            <a href="#" onclick="window.scrollTo({top:2000, behaviour:'smooth'}); return false;">About</a>
+            <a href="#" class="account-link">Account</a>
+            <input type="text" placeholder="search here for more quizzes!">
+            <button class="loginlink">Sign in</button>
+        </div>
+        <i class="ri-menu-line" id ="icon" onclick="showSidebar()"></i>
+    </div>
+    <div class="main">
+        <div class="left-container">
+            <div id="quiz-card">
+                <h1>Quiz</h1>
+                <div id="question">
+                    <h2>what is largest animal  on this planet</h2>
+                </div>
+                <div id="answers">
+                    <button class="btn">Answer1</button>
+                    <button class="btn">Answer2</button>
+                    <button class="btn">Answer3</button>
+                    <button class="btn">Answer4</button>
+                </div>
+                <button id="next-btn">Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div><h1>QuizQuest</h1></div>
+        <p>Welcome to QuizQuest! We create fun and engaging quizzes to test your knowledge and challenge your mind.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
